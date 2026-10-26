@@ -1,0 +1,129 @@
+{
+  "question": "Which real-world pain point in a target niche has strong behavioral evidence and AI input-to-output feasibility worth building a startup MVP for?",
+  "trigger": [
+    "Starting a new startup or micro-SaaS exploration in a domain or niche",
+    "Reviewing collected community complaints, software reviews, or freelance job posts to pick an MVP idea",
+    "Evaluating whether an AI product idea solves a fear-driven pain versus a low-priority desire"
+  ],
+  "decision": [
+    "Select one high-pain, high-willingness-to-pay problem clue to reframe into an AI MVP concept and validate with 10 target users",
+    "Discard low-pain vitamin/desire ideas or overcrowded generic wrappers before writing application code"
+  ],
+  "evidence": [
+    "Verbatim user complaints and manual workflow descriptions from Reddit, forums, or community discussions",
+    "1-to-3 star software reviews from Capterra or G2 highlighting clunky manual steps",
+    "Indie Hackers and Product Hunt launch threads showing validated micro-SaaS revenue and user questions",
+    "Repeated freelance job postings on Upwork or Fiverr showing tasks clients already pay humans to perform"
+  ],
+  "success_measure": "Produces a source-verified Clue Page (verbatim quote, context, AI input-to-output mapping, URL) and ranks candidates using the 5-criteria Easy-Vibe scorecard (Frequency, Pain Level, Current Workaround, Willingness to Pay, Market Size) plus need-tier classification",
+  "outcome": "Generate a structured Easy-Vibe Clue Page, 5-Criteria Startup Idea Scorecard, and Reframed AI MVP Validation Plan in JSON and Markdown",
+  "intended_users": [
+    "AI engineers",
+    "indie hackers",
+    "product managers",
+    "startup founders"
+  ],
+  "input_types": [
+    "JSON clue collection",
+    "Markdown or text notes of raw community complaints and job posts",
+    "niche keyword and search parameters"
+  ],
+  "output_artifacts": [
+    "structured JSON startup idea scorecard and clue matrix",
+    "Markdown Clue Page and Reframed MVP Validation Plan"
+  ],
+  "use_cases": [
+    "4-channel community and market clue hunting query generation",
+    "Easy-Vibe 20-minute Clue Page structuring with AI input-to-output mapping",
+    "5-criteria startup idea scoring and need-tier classification (pain vs gratification vs desire)",
+    "Horizontal user segmentation, vertical context timeline mapping, and MVP value reframing"
+  ],
+  "examples": [
+    {
+      "invocation": "/startup-idea-hunter-skill --input evals/golden/case-1/input.json --output output/freelance-ideas.json",
+      "description": "Analyze and rank freelance workflow clues into a startup scorecard and MVP validation plan"
+    },
+    {
+      "invocation": "/startup-idea-hunter-skill Hunt startup ideas in the freelance workflow niche for an AI Engineer",
+      "description": "Generate 4-step search queries, harvest clues, and score AI startup concepts for freelancers"
+    }
+  ],
+  "permissions_systems": [
+    "Read local clue input files (JSON/Markdown)",
+    "Write local JSON and Markdown analysis reports",
+    "No external network access required in deterministic pipeline scripts"
+  ],
+  "typical_completion_time": "2-5 minutes",
+  "compatibility": {
+    "declared": [
+      "antigravity",
+      "claude-code",
+      "cline",
+      "codex",
+      "cursor",
+      "factory",
+      "gemini",
+      "github-copilot",
+      "goose",
+      "junie",
+      "kilo-code",
+      "kiro",
+      "opencode",
+      "roo-code",
+      "trae",
+      "universal",
+      "windsurf"
+    ],
+    "certified": []
+  },
+  "environment": {
+    "documentation_sources": [
+      "Easy-Vibe Stage 1 Appendix Idea Sources and Finding Great Idea methodology in references/"
+    ],
+    "data_sources": [
+      "User-supplied or agent-harvested community clues, software reviews, and job listings"
+    ],
+    "required_capabilities": [
+      "Python 3.9+ standard library",
+      "Read local input files and write local output reports"
+    ],
+    "readiness_checks": [
+      "Input JSON or text contains niche name and at least one raw clue or query request"
+    ]
+  },
+  "risk": {
+    "tier": "low",
+    "permissions": [
+      "Read user-supplied local clue files",
+      "Write local output JSON and Markdown files"
+    ],
+    "mutation_boundary": "read-only",
+    "approval_required": []
+  },
+  "software_mutation": {
+    "applies": false
+  },
+  "data_interfaces": {
+    "applies": false
+  },
+  "semantic_recon": {
+    "applies": false,
+    "sources": []
+  },
+  "semantic_contract": {
+    "applies": false
+  },
+  "routing_tests": {
+    "should_trigger": [
+      "Help me find startup ideas in the freelance niche using Easy-Vibe",
+      "Score these Reddit complaints and Capterra reviews to find the best AI micro-SaaS idea",
+      "Generate a 4-step clue hunting query pack and Clue Page for property management"
+    ],
+    "should_not_trigger": [
+      "Deploy a Kubernetes cluster to AWS EKS",
+      "Fix a SQL injection vulnerability in login.py",
+      "Train a ResNet-50 image classifier on CIFAR-10"
+    ]
+  },
+  "support_tier": "supported"
+}

@@ -1,0 +1,199 @@
+{
+  "authority_owner": {
+    "confirmed_by": "dino",
+    "evidence": [
+      "user-session-owner"
+    ],
+    "proposed_by": null,
+    "status": "confirmed",
+    "updated_at": "2026-10-26T21:42:27Z",
+    "value": "dino"
+  },
+  "created_at": "2026-10-26T21:42:11Z",
+  "created_by": "dino",
+  "decision_consequence": {
+    "confirmed_by": "dino",
+    "evidence": [
+      "easy-vibe-stage1-finding-great-idea"
+    ],
+    "proposed_by": null,
+    "status": "confirmed",
+    "updated_at": "2026-10-26T21:42:26Z",
+    "value": "Select one evidence-backed, pain-driven micro-SaaS or AI workflow concept to prototype and validate with real users, discarding vitamin/desire ideas without behavioral proof"
+  },
+  "decision_consumer": {
+    "confirmed_by": "dino",
+    "evidence": [
+      "user-statement-ai-engineer"
+    ],
+    "proposed_by": null,
+    "status": "confirmed",
+    "updated_at": "2026-10-26T21:42:26Z",
+    "value": "AI engineers, indie hackers, and startup founders using coding agents to discover and validate startup ideas"
+  },
+  "environment_requirements": {
+    "confirmed_by": "dino",
+    "evidence": [
+      "local-python-environment"
+    ],
+    "proposed_by": null,
+    "status": "confirmed",
+    "updated_at": "2026-10-26T21:42:27Z",
+    "value": "Python 3.9+ standard library for deterministic clue parsing, scoring, and Markdown/JSON report generation; optional agent web search for live community clue harvesting"
+  },
+  "failure_impact": {
+    "confirmed_by": "dino",
+    "evidence": [
+      "easy-vibe-xiaoming-case-study"
+    ],
+    "proposed_by": null,
+    "status": "confirmed",
+    "updated_at": "2026-10-26T21:42:27Z",
+    "value": "Wasting weeks building an unvalidated AI wrapper or generic app for a low-pain desire where free alternatives already suffice"
+  },
+  "history": [
+    {
+      "action": "confirm",
+      "actor": "dino",
+      "at": "2026-10-26T21:42:26Z",
+      "field": "objective"
+    },
+    {
+      "action": "confirm",
+      "actor": "dino",
+      "at": "2026-10-26T21:42:26Z",
+      "field": "decision_consumer"
+    },
+    {
+      "action": "confirm",
+      "actor": "dino",
+      "at": "2026-10-26T21:42:26Z",
+      "field": "decision_consequence"
+    },
+    {
+      "action": "confirm",
+      "actor": "dino",
+      "at": "2026-10-26T21:42:27Z",
+      "field": "success_measure"
+    },
+    {
+      "action": "confirm",
+      "actor": "dino",
+      "at": "2026-10-26T21:42:27Z",
+      "field": "failure_impact"
+    },
+    {
+      "action": "confirm",
+      "actor": "dino",
+      "at": "2026-10-26T21:42:27Z",
+      "field": "environment_requirements"
+    },
+    {
+      "action": "confirm",
+      "actor": "dino",
+      "at": "2026-10-26T21:42:27Z",
+      "field": "authority_owner"
+    },
+    {
+      "action": "confirm",
+      "actor": "dino",
+      "at": "2026-10-26T21:42:27Z",
+      "field": "semantic_contract_applies"
+    }
+  ],
+  "objective": {
+    "confirmed_by": "dino",
+    "evidence": [
+      "easy-vibe-stage1-appendix-idea-sources",
+      "easy-vibe-stage1-finding-great-idea",
+      "user-freelance-walkthrough"
+    ],
+    "proposed_by": null,
+    "status": "confirmed",
+    "updated_at": "2026-10-26T21:42:26Z",
+    "value": "Hunt, structure, and score real-world startup and AI product clues from communities, low-star software reviews, indie launches, and freelance job boards into a source-backed Clue Page and 5-Criteria Startup Idea Scorecard following the Easy-Vibe methodology"
+  },
+  "problem": {
+    "confirmed_by": "dino",
+    "evidence": [
+      "user_statement"
+    ],
+    "proposed_by": null,
+    "status": "confirmed",
+    "updated_at": "2026-10-26T21:42:11Z",
+    "value": "Synthesize the Easy-Vibe startup idea discovery and AI problem-hunting workflow into a reusable coding agent skill and publish to aidino GitHub org"
+  },
+  "schema_version": 1,
+  "semantic": {
+    "ambiguity_behavior": {
+      "confirmed_by": null,
+      "evidence": [],
+      "proposed_by": null,
+      "status": "unknown",
+      "updated_at": null,
+      "value": null
+    },
+    "definitions": {
+      "confirmed_by": null,
+      "evidence": [],
+      "proposed_by": null,
+      "status": "unknown",
+      "updated_at": null,
+      "value": null
+    },
+    "freshness_policy": {
+      "confirmed_by": null,
+      "evidence": [],
+      "proposed_by": null,
+      "status": "unknown",
+      "updated_at": null,
+      "value": null
+    },
+    "grain_unit": {
+      "confirmed_by": null,
+      "evidence": [],
+      "proposed_by": null,
+      "status": "unknown",
+      "updated_at": null,
+      "value": null
+    },
+    "source_precedence": {
+      "confirmed_by": null,
+      "evidence": [],
+      "proposed_by": null,
+      "status": "unknown",
+      "updated_at": null,
+      "value": null
+    },
+    "time_semantics": {
+      "confirmed_by": null,
+      "evidence": [],
+      "proposed_by": null,
+      "status": "unknown",
+      "updated_at": null,
+      "value": null
+    }
+  },
+  "semantic_contract_applies": {
+    "confirmed_by": "dino",
+    "evidence": [
+      "public-community-clue-analysis-no-corporate-semantic-contract"
+    ],
+    "proposed_by": null,
+    "status": "confirmed",
+    "updated_at": "2026-10-26T21:42:27Z",
+    "value": false
+  },
+  "success_measure": {
+    "confirmed_by": "dino",
+    "evidence": [
+      "user-freelance-walkthrough",
+      "easy-vibe-stage1-finding-great-idea"
+    ],
+    "proposed_by": null,
+    "status": "confirmed",
+    "updated_at": "2026-10-26T21:42:27Z",
+    "value": "Every generated report contains at least 3 verbatim source-linked clues with explicit AI input-to-output data mappings, a 5-criteria Easy-Vibe evaluation matrix, need-tier classification (pain vs gratification vs desire), and a reframed MVP validation plan"
+  },
+  "updated_at": "2026-10-26T21:42:27Z"
+}

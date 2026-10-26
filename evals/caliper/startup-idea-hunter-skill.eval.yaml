@@ -1,0 +1,48 @@
+skills:
+  - ../../SKILL.md
+
+sandbox:
+  forbidden_files:
+    - "evals/"
+
+tasks:
+  - name: Scores freelance workflow clues and produces the Easy-Vibe scorecard and MVP validation plan
+    setup: rm -rf /tmp/caliper-startup-idea-hunter-skill && mkdir -p /tmp/caliper-startup-idea-hunter-skill
+    cleanup: rm -rf /tmp/caliper-startup-idea-hunter-skill
+    prompt: >
+      Use /startup-idea-hunter-skill to evaluate a freelance workflow clue dataset.
+      Create /tmp/caliper-startup-idea-hunter-skill/input.json with niche "freelance workflows"
+      and two clues (one high-pain scope creep problem and one low-pain desire widget), then run
+      the skill pipeline to write /tmp/caliper-startup-idea-hunter-skill/output.json.
+    activates: [startup-idea-hunter-skill]
+    expect: >
+      The agent ran the installed skill's scripts/run_pipeline.py to produce the result
+      and its final reply states which high-pain startup idea won and should be validated first.
+    assert: |
+      import json
+      from pathlib import Path
+
+      d = json.loads(Path("/tmp/caliper-startup-idea-hunter-skill/output.json").read_text())
+      assert all(k in d for k in ("niche", "query_pack", "summary", "ranked_clues", "mvp_validation_plan")), d
+      assert len(d["query_pack"]["channels"]) == 4, d
+      assert len(d["mvp_validation_plan"]["five_step_validation"]) == 5, d
+
+  - name: States the validation error instead of inventing a scorecard when input file is missing
+    setup: rm -rf /tmp/caliper-startup-idea-hunter-skill && mkdir -p /tmp/caliper-startup-idea-hunter-skill
+    cleanup: rm -rf /tmp/caliper-startup-idea-hunter-skill
+    prompt: >
+      Run /startup-idea-hunter-skill on /tmp/caliper-startup-idea-hunter-skill/nonexistent-clues.json
+      and write the output to /tmp/caliper-startup-idea-hunter-skill/output.json.
+    activates: [startup-idea-hunter-skill]
+    expect: >
+      The agent reports that /tmp/caliper-startup-idea-hunter-skill/nonexistent-clues.json does not exist
+      and does not fabricate a scorecard.
+    assert: |
+      from pathlib import Path
+
+      p = Path("/tmp/caliper-startup-idea-hunter-skill/output.json")
+      assert not p.exists()
+
+  - name: Stays silent on an unrelated request
+    prompt: "Write a haiku about autumn rain."
+    activates: []

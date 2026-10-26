@@ -1,0 +1,47 @@
+{
+  "niche": "e-commerce seller operations",
+  "target_segments": [
+    "cross-border Shopify merchants",
+    "multi-channel Amazon and TikTok Shop sellers"
+  ],
+  "clues": [
+    {
+      "id": "clue-supplier-quote-normalizer",
+      "title": "Cross-Border Vendor Excel/WeChat Quote Comparator",
+      "channel": "reddit_community_pain",
+      "quote": "Comparing supplier quotes in Excel takes way too much time because every factory sends different MOQ tiers, packaging specs, and FOB vs EXW terms in messy spreadsheets or chat messages.",
+      "persona_context": "Cross-border e-commerce buyer sourcing from 8-15 suppliers per product launch",
+      "input_data": "Vendor Excel sheets, PDF quotes, and chat screenshots with MOQ/shipping terms",
+      "output_data": "Normalized landed-cost comparison table with margin flags",
+      "source_url": "https://www.reddit.com/r/smallbusiness/",
+      "source_date": "2026-10-27",
+      "need_tier": "pain",
+      "scores": {
+        "frequency": 4.0,
+        "pain_level": 4.5,
+        "current_workaround": 4.5,
+        "willingness_to_pay": 4.5,
+        "market_size": 4.0
+      }
+    },
+    {
+      "id": "clue-multi-format-event-poster",
+      "title": "Safe-Zone Aware Multi-Platform Campaign Asset Resizer",
+      "channel": "personal_or_peer_observation",
+      "quote": "Before every campaign, one poster has to be turned into a horizontal banner, vertical story, and video cover. Every time I resize, the title or subject gets cropped by platform UI overlays.",
+      "persona_context": "E-commerce social marketer publishing daily across TikTok, Instagram, and Shopee",
+      "input_data": "Master campaign design + target platform aspect ratios",
+      "output_data": "Safe-zone validated horizontal, square, and vertical assets",
+      "source_url": "https://www.capterra.com/",
+      "source_date": "2026-10-27",
+      "need_tier": "gratification",
+      "scores": {
+        "frequency": 4.5,
+        "pain_level": 3.5,
+        "current_workaround": 4.0,
+        "willingness_to_pay": 3.5,
+        "market_size": 4.5
+      }
+    }
+  ]
+}

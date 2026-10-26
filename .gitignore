@@ -1,0 +1,4 @@
+.skill-cache/
+__pycache__/
+*.py[cod]
+output/

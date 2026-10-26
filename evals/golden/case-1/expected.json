@@ -1,0 +1,249 @@
+{
+  "skill": "startup-idea-hunter-skill",
+  "version": "1.0.0",
+  "niche": "freelance workflows",
+  "query_pack": {
+    "niche": "freelance workflows",
+    "target_segments": [
+      "solo full-stack web developers",
+      "freelance designers and agencies"
+    ],
+    "channel_count": 4,
+    "channels": [
+      {
+        "channel_id": "reddit_community_pain",
+        "step": 1,
+        "title": "Reddit & Community Manual Workflow Pain",
+        "objective": "Catch users describing repetitive copy-paste, spreadsheet glue, or hours wasted.",
+        "queries": [
+          "site:reddit.com \"freelance workflows\" (\"is there a tool\" OR \"i spend hours\" OR \"manually\")",
+          "site:reddit.com \"freelance workflows\" (\"tedious\" OR \"nightmare\" OR \"waste of time\" OR \"spreadsheet\")",
+          "site:reddit.com \"freelance workflows\" (\"how do you automate\" OR \"copy paste\" OR \"every week\")"
+        ],
+        "what_to_save": "Verbatim complaint quote, user role/context, trigger frequency, and link with date."
+      },
+      {
+        "channel_id": "capterra_low_star_reviews",
+        "step": 2,
+        "title": "Capterra & G2 1-to-3 Star Software Reviews",
+        "objective": "Find paying software users frustrated by clunky UX, manual imports, or missing smart automation.",
+        "queries": [
+          "site:capterra.com \"freelance workflows\" (\"Cons\" OR \"clunky\" OR \"manual\" OR \"frustrating\")",
+          "site:capterra.com \"freelance workflows\" (\"import\" OR \"formatting\" OR \"template\" OR \"too many clicks\")",
+          "site:g2.com \"freelance workflows\" (\"What do you dislike\" OR \"manual entry\" OR \"export\")"
+        ],
+        "what_to_save": "Incumbent software name, exact 'Cons' quote, and the manual workaround users are forced to do."
+      },
+      {
+        "channel_id": "indie_hackers_product_hunt",
+        "step": 3,
+        "title": "Indie Hackers Revenue Proofs & Product Hunt Launch Comments",
+        "objective": "Verify solo-founder willingness-to-pay ($500-$5,000/mo) and unserved edge cases in launch comments.",
+        "queries": [
+          "site:indiehackers.com \"freelance workflows\" (\"problem\" OR \"revenue\" OR \"customers\" OR \"launched\")",
+          "site:producthunt.com \"freelance workflows\" (\"does it support\" OR \"can it handle\" OR \"alternative\")",
+          "site:trends.google.com \"freelance workflows\""
+        ],
+        "what_to_save": "One-line value proposition, pricing tier, first customer acquisition channel, and unmet comment requests."
+      },
+      {
+        "channel_id": "upwork_fiverr_repetitive_jobs",
+        "step": 4,
+        "title": "Upwork & Fiverr Paid Repetitive Human Tasks",
+        "objective": "Spot recurring manual data processing tasks where clients already pay humans per batch.",
+        "queries": [
+          "site:upwork.com/freelance-jobs \"freelance workflows\" (\"convert\" OR \"extract\" OR \"format\" OR \"transcribe\")",
+          "site:upwork.com/services \"freelance workflows\" (\"clean\" OR \"spreadsheet\" OR \"PDF\" OR \"automation\")",
+          "site:fiverr.com \"freelance workflows\" (\"data entry\" OR \"formatting\" OR \"summary\" OR \"audit\")"
+        ],
+        "what_to_save": "Exact raw input files provided by the client and the exact deliverable format expected back."
+      }
+    ],
+    "ai_engineer_lenses": [
+      {
+        "pattern": "Messy Document / Screenshot -> Structured Table",
+        "ai_stack": "Vision-Language Model (VLM) + Strict JSON Schema Validator",
+        "signal": "Users re-typing PDFs, receipts, schedules, or WhatsApp/Zalo screenshots into Excel/CSV."
+      },
+      {
+        "pattern": "Voice / Meeting / Call Recording -> Actionable System Tasks",
+        "ai_stack": "ASR (Whisper) + LLM Action Extractor + Task API Webhook",
+        "signal": "Users re-listening to client calls to write proposals, scope changes, or Trello/ClickUp tickets."
+      },
+      {
+        "pattern": "Incoming Request vs. Baseline Contract / Policy Diffing",
+        "ai_stack": "Embedding Retrieval + Structured Semantic Diff + Draft Response Generator",
+        "signal": "Users losing money or time to scope creep, compliance checks, or vendor quote comparisons."
+      },
+      {
+        "pattern": "Multi-App Context Glue -> Ready-to-Send Artifact",
+        "ai_stack": "Deterministic Connector Script + Few-Shot LLM Formatter",
+        "signal": "Users opening 3+ tabs every week to piece together timesheets, invoices, or multi-format posts."
+      }
+    ]
+  },
+  "summary": {
+    "total_clues": 4,
+    "build_mvp_now_count": 3,
+    "niche_down_count": 0,
+    "skip_vitamin_count": 1,
+    "need_tier_breakdown": {
+      "pain": 3,
+      "gratification": 0,
+      "desire": 1
+    },
+    "top_recommendation_id": "clue-scope-creep-guard",
+    "top_recommendation_title": "Client Scope Creep Detector & Polite Change-Order Generator",
+    "top_adjusted_score": 100.0
+  },
+  "ranked_clues": [
+    {
+      "id": "clue-scope-creep-guard",
+      "title": "Client Scope Creep Detector & Polite Change-Order Generator",
+      "channel": "reddit_community_pain",
+      "quote": "Client hired me for a landing page: $2,000 for 20 hours of work (my rate is $100/hr). Then the extras started: 'Can you add a blog section?' (+10 hours), 'Actually let's change the entire color scheme' (+8 hours), 'One more revision on the copy' (+5 hours). I kept saying yes because I didn't want to lose the client... Final tally: 43 hours worked, $2,000 paid. That's $2,300 in unpaid work.",
+      "persona_context": "Freelance web developer managing client revision requests over email and chat",
+      "input_data": "Signed project scope/contract PDF + incoming client email or message",
+      "output_data": "Out-of-scope flag + polite change-order quote draft + one-click payment link",
+      "ai_capability": "VLM / OCR Document Parser + Deterministic Balance Validator",
+      "source_url": "https://www.reddit.com/r/freelance/comments/1ozc3zq/lost_2300_to_scope_creep_on_one_project_how_do/",
+      "source_date": "2025-11-17",
+      "need_tier": "pain",
+      "need_tier_multiplier": 1.15,
+      "scores": {
+        "frequency": 4.5,
+        "pain_level": 5.0,
+        "current_workaround": 4.0,
+        "willingness_to_pay": 4.5,
+        "market_size": 4.0
+      },
+      "raw_score_100": 89.5,
+      "adjusted_score_100": 100.0,
+      "verdict": "BUILD_MVP_NOW",
+      "horizontal_segment": "Fixed-price freelance web developers and UI/UX designers",
+      "vertical_trigger_moment": "The moment a client replies with 'just one quick addition' after initial milestone sign-off",
+      "rank": 1
+    },
+    {
+      "id": "clue-bank-pdf-cleaner",
+      "title": "Scanned Bank Statement & Receipt PDF to Balanced CSV Converter",
+      "channel": "upwork_fiverr_repetitive_jobs",
+      "quote": "Are your bank statement PDFs scanned, messy, or unable to import cleanly into your accounting software? I will accurately transcribe and format your bank statements into clean, balanced Excel or CSV sheets.",
+      "persona_context": "Freelancers and bookkeepers preparing quarterly tax filings from messy PDFs",
+      "input_data": "Scanned PDF bank statements and photographed expense receipts",
+      "output_data": "Reconciled, balance-checked CSV ready for QuickBooks or Xero import",
+      "ai_capability": "VLM / OCR Document Parser + Deterministic Balance Validator",
+      "source_url": "https://www.upwork.com/services/product/admin-customer-support-clean-balanced-excel-or-csv-sheets-from-your-bank-statement-pdfs-2107100773566316331",
+      "source_date": "2026-10-27",
+      "need_tier": "pain",
+      "need_tier_multiplier": 1.15,
+      "scores": {
+        "frequency": 3.5,
+        "pain_level": 4.5,
+        "current_workaround": 4.5,
+        "willingness_to_pay": 4.5,
+        "market_size": 4.0
+      },
+      "raw_score_100": 85.0,
+      "adjusted_score_100": 97.75,
+      "verdict": "BUILD_MVP_NOW",
+      "horizontal_segment": "Solo freelancers and boutique bookkeepers handling messy PDF statements",
+      "vertical_trigger_moment": "Quarterly tax prep when scanned PDF statements fail QuickBooks CSV import",
+      "rank": 2
+    },
+    {
+      "id": "clue-timesheet-to-invoice",
+      "title": "Multi-Source Activity to Invoice Synthesizer",
+      "channel": "reddit_community_pain",
+      "quote": "I've been freelancing for a few years now (mostly full stack), and every month I waste a couple hours just trying to piece together timesheets -> invoices -> payments.",
+      "persona_context": "Full-stack freelancer billing hourly across multiple client repositories",
+      "input_data": "Git commit logs, calendar events, and time-tracker exports",
+      "output_data": "Client-grouped line-item invoice PDF + payment tracking dashboard",
+      "ai_capability": "VLM / OCR Document Parser + Deterministic Balance Validator",
+      "source_url": "https://www.reddit.com/r/Freelancers/comments/1oujwua/how_do_you_track_your_time_make_invoices_right_now/",
+      "source_date": "2025-11-11",
+      "need_tier": "pain",
+      "need_tier_multiplier": 1.15,
+      "scores": {
+        "frequency": 4.0,
+        "pain_level": 4.0,
+        "current_workaround": 4.0,
+        "willingness_to_pay": 4.0,
+        "market_size": 4.0
+      },
+      "raw_score_100": 80.0,
+      "adjusted_score_100": 92.0,
+      "verdict": "BUILD_MVP_NOW",
+      "horizontal_segment": "Hourly full-stack freelance engineers with 2-5 concurrent clients",
+      "vertical_trigger_moment": "Last Friday of the month when assembling billable hours across GitHub, Slack, and calendars",
+      "rank": 3
+    },
+    {
+      "id": "clue-desk-mood-streak",
+      "title": "Aesthetic Freelancer Desk Mood & Hydration Streak Widget",
+      "channel": "personal_or_peer_observation",
+      "quote": "It would be nice to have a cute minimalist widget on my desktop to log my mood and water glasses with daily streak badges while freelancing from home.",
+      "persona_context": "Remote freelancer wanting better daily wellness habits",
+      "input_data": "Manual mood emoji click and water glass counter",
+      "output_data": "Weekly streak badge graphic",
+      "ai_capability": "Multi-Source Context Aggregator + Strict Schema LLM Formatter",
+      "source_url": "https://www.indiehackers.com/products",
+      "source_date": "2026-10-27",
+      "need_tier": "desire",
+      "need_tier_multiplier": 0.75,
+      "scores": {
+        "frequency": 5.0,
+        "pain_level": 1.5,
+        "current_workaround": 1.5,
+        "willingness_to_pay": 1.5,
+        "market_size": 5.0
+      },
+      "raw_score_100": 51.0,
+      "adjusted_score_100": 38.25,
+      "verdict": "SKIP_VITAMIN",
+      "horizontal_segment": "Remote workers interested in self-quantification",
+      "vertical_trigger_moment": "Idle break between tasks",
+      "rank": 4
+    }
+  ],
+  "mvp_validation_plan": {
+    "winning_clue_id": "clue-scope-creep-guard",
+    "winning_title": "Client Scope Creep Detector & Polite Change-Order Generator",
+    "reframed_positioning": "Instead of a generic freelance workflows platform, build a focused 'Client Scope Creep Detector & Polite Change-Order Generator' copilot exclusively for Fixed-price freelance web developers and UI/UX designers.",
+    "horizontal_segment": "Fixed-price freelance web developers and UI/UX designers",
+    "vertical_context_timeline": "The moment a client replies with 'just one quick addition' after initial milestone sign-off",
+    "ai_workflow_contract": {
+      "input": "Signed project scope/contract PDF + incoming client email or message",
+      "processing_engine": "VLM / OCR Document Parser + Deterministic Balance Validator",
+      "output": "Out-of-scope flag + polite change-order quote draft + one-click payment link"
+    },
+    "five_step_validation": [
+      {
+        "step": 1,
+        "name": "Talk to 10 Real Target Users About Current Behavior",
+        "action": "Recruit 10 Fixed-price freelance web developers and UI/UX designers and ask how they currently handle 'Signed project scope/contract PDF + incoming client email or message'. Verify they already use a manual patch (spreadsheet, scripts, or unpaid overtime)."
+      },
+      {
+        "step": 2,
+        "name": "Benchmark Against Current Workaround Friction",
+        "action": "Ensure the AI workflow produces 'Out-of-scope flag + polite change-order quote draft + one-click payment link' in <60 seconds with zero manual template setup, beating spreadsheets and bloated incumbent tools."
+      },
+      {
+        "step": 3,
+        "name": "Run Payment / Deposit Commitment Test",
+        "action": "Present a concierge demo or landing page with a paid pilot/pre-order button. Pass threshold: >10% conversion = strong signal; 5-10% = refine segment; <5% = pivot."
+      },
+      {
+        "step": 4,
+        "name": "Bottom-Up Market Sizing",
+        "action": "Multiply reachable target segment count x willingness-to-pay conversion rate x annual subscription ARPU."
+      },
+      {
+        "step": 5,
+        "name": "Lock In Non-Trivial Defensibility (Moat)",
+        "action": "Accumulate domain-specific edge-case benchmarks, vertical workflow integrations, and user correction loops so generic chat wrappers cannot replicate the reliability."
+      }
+    ]
+  },
+  "_warnings": []
+}

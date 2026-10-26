@@ -1,0 +1,30 @@
+{
+  "_instructions": "Default weights, need-tier multipliers, and input schema reference for startup-idea-hunter-skill. No API keys are required for offline scoring.",
+  "skill": "startup-idea-hunter-skill",
+  "version": "1.0.0",
+  "criteria_weights": {
+    "frequency": 0.20,
+    "pain_level": 0.25,
+    "current_workaround": 0.20,
+    "willingness_to_pay": 0.25,
+    "market_size": 0.10
+  },
+  "need_tier_multipliers": {
+    "pain": 1.15,
+    "gratification": 1.00,
+    "desire": 0.75
+  },
+  "verdict_thresholds": {
+    "build_mvp_now_min_score": 76.0,
+    "build_mvp_now_min_pain": 4.0,
+    "build_mvp_now_min_wtp": 4.0,
+    "skip_vitamin_max_score": 50.0
+  },
+  "channels": [
+    "reddit_community_pain",
+    "capterra_low_star_reviews",
+    "indie_hackers_product_hunt",
+    "upwork_fiverr_repetitive_jobs",
+    "personal_or_peer_observation"
+  ]
+}

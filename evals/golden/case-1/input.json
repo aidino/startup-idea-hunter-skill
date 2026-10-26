@@ -1,0 +1,93 @@
+{
+  "niche": "freelance workflows",
+  "target_segments": [
+    "solo full-stack web developers",
+    "freelance designers and agencies"
+  ],
+  "clues": [
+    {
+      "id": "clue-scope-creep-guard",
+      "title": "Client Scope Creep Detector & Polite Change-Order Generator",
+      "channel": "reddit_community_pain",
+      "quote": "Client hired me for a landing page: $2,000 for 20 hours of work (my rate is $100/hr). Then the extras started: 'Can you add a blog section?' (+10 hours), 'Actually let's change the entire color scheme' (+8 hours), 'One more revision on the copy' (+5 hours). I kept saying yes because I didn't want to lose the client... Final tally: 43 hours worked, $2,000 paid. That's $2,300 in unpaid work.",
+      "persona_context": "Freelance web developer managing client revision requests over email and chat",
+      "input_data": "Signed project scope/contract PDF + incoming client email or message",
+      "output_data": "Out-of-scope flag + polite change-order quote draft + one-click payment link",
+      "source_url": "https://www.reddit.com/r/freelance/comments/1ozc3zq/lost_2300_to_scope_creep_on_one_project_how_do/",
+      "source_date": "2025-11-17",
+      "need_tier": "pain",
+      "horizontal_segment": "Fixed-price freelance web developers and UI/UX designers",
+      "vertical_trigger_moment": "The moment a client replies with 'just one quick addition' after initial milestone sign-off",
+      "scores": {
+        "frequency": 4.5,
+        "pain_level": 5.0,
+        "current_workaround": 4.0,
+        "willingness_to_pay": 4.5,
+        "market_size": 4.0
+      }
+    },
+    {
+      "id": "clue-timesheet-to-invoice",
+      "title": "Multi-Source Activity to Invoice Synthesizer",
+      "channel": "reddit_community_pain",
+      "quote": "I've been freelancing for a few years now (mostly full stack), and every month I waste a couple hours just trying to piece together timesheets -> invoices -> payments.",
+      "persona_context": "Full-stack freelancer billing hourly across multiple client repositories",
+      "input_data": "Git commit logs, calendar events, and time-tracker exports",
+      "output_data": "Client-grouped line-item invoice PDF + payment tracking dashboard",
+      "source_url": "https://www.reddit.com/r/Freelancers/comments/1oujwua/how_do_you_track_your_time_make_invoices_right_now/",
+      "source_date": "2025-11-11",
+      "need_tier": "pain",
+      "horizontal_segment": "Hourly full-stack freelance engineers with 2-5 concurrent clients",
+      "vertical_trigger_moment": "Last Friday of the month when assembling billable hours across GitHub, Slack, and calendars",
+      "scores": {
+        "frequency": 4.0,
+        "pain_level": 4.0,
+        "current_workaround": 4.0,
+        "willingness_to_pay": 4.0,
+        "market_size": 4.0
+      }
+    },
+    {
+      "id": "clue-bank-pdf-cleaner",
+      "title": "Scanned Bank Statement & Receipt PDF to Balanced CSV Converter",
+      "channel": "upwork_fiverr_repetitive_jobs",
+      "quote": "Are your bank statement PDFs scanned, messy, or unable to import cleanly into your accounting software? I will accurately transcribe and format your bank statements into clean, balanced Excel or CSV sheets.",
+      "persona_context": "Freelancers and bookkeepers preparing quarterly tax filings from messy PDFs",
+      "input_data": "Scanned PDF bank statements and photographed expense receipts",
+      "output_data": "Reconciled, balance-checked CSV ready for QuickBooks or Xero import",
+      "source_url": "https://www.upwork.com/services/product/admin-customer-support-clean-balanced-excel-or-csv-sheets-from-your-bank-statement-pdfs-2107100773566316331",
+      "source_date": "2026-10-27",
+      "need_tier": "pain",
+      "horizontal_segment": "Solo freelancers and boutique bookkeepers handling messy PDF statements",
+      "vertical_trigger_moment": "Quarterly tax prep when scanned PDF statements fail QuickBooks CSV import",
+      "scores": {
+        "frequency": 3.5,
+        "pain_level": 4.5,
+        "current_workaround": 4.5,
+        "willingness_to_pay": 4.5,
+        "market_size": 4.0
+      }
+    },
+    {
+      "id": "clue-desk-mood-streak",
+      "title": "Aesthetic Freelancer Desk Mood & Hydration Streak Widget",
+      "channel": "personal_or_peer_observation",
+      "quote": "It would be nice to have a cute minimalist widget on my desktop to log my mood and water glasses with daily streak badges while freelancing from home.",
+      "persona_context": "Remote freelancer wanting better daily wellness habits",
+      "input_data": "Manual mood emoji click and water glass counter",
+      "output_data": "Weekly streak badge graphic",
+      "source_url": "https://www.indiehackers.com/products",
+      "source_date": "2026-10-27",
+      "need_tier": "desire",
+      "horizontal_segment": "Remote workers interested in self-quantification",
+      "vertical_trigger_moment": "Idle break between tasks",
+      "scores": {
+        "frequency": 5.0,
+        "pain_level": 1.5,
+        "current_workaround": 1.5,
+        "willingness_to_pay": 1.5,
+        "market_size": 5.0
+      }
+    }
+  ]
+}

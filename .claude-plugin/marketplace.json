@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "startup-idea-hunter-skill",
+  "owner": {
+    "name": "aidino"
+  },
+  "plugins": [
+    {
+      "name": "startup-idea-hunter-skill",
+      "source": "./",
+      "description": "Hunt, structure, and score startup, micro-SaaS, and AI product ideas using the Easy-Vibe Stage 1 methodology."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "niche": "property management and rental listings",
+  "target_segments": [
+    "independent landlords with 5-30 units",
+    "residential leasing agents"
+  ],
+  "clues": [
+    {
+      "id": "clue-showing-notes-to-listing",
+      "title": "Property Inspection Voice Notes & Photos to Multi-Portal Listing Generator",
+      "channel": "indie_hackers_product_hunt",
+      "quote": "After every unit turnover inspection, my photos on the phone get mixed up and I spend 2 hours typing room dimensions and utility details into three listing portals.",
+      "persona_context": "Residential leasing agent handling 10+ unit turnovers per month",
+      "input_data": "Phone walkthrough photos + 2-minute voice memo of unit features",
+      "output_data": "Room-tagged photo gallery + formatted listing copy for Zillow, Apartments.com, and Facebook",
+      "source_url": "https://www.producthunt.com/",
+      "source_date": "2026-10-27",
+      "need_tier": "pain",
+      "scores": {
+        "frequency": 4.5,
+        "pain_level": 4.5,
+        "current_workaround": 4.0,
+        "willingness_to_pay": 4.5,
+        "market_size": 4.0
+      }
+    },
+    {
+      "id": "clue-tenant-maintenance-triage",
+      "title": "WhatsApp/SMS Tenant Repair Photo Triage & Vendor Quote Matcher",
+      "channel": "capterra_low_star_reviews",
+      "quote": "Whenever a tenant texts a blurry photo of a leaking pipe at 10pm, I have to manually ask follow-up questions and copy-paste details to three plumbers for quotes.",
+      "persona_context": "Independent landlord managing 15 rental units alongside a day job",
+      "input_data": "Tenant photo + text message describing appliance or plumbing issue",
+      "output_data": "Diagnostic checklist + standardized work order sent to preferred vendors",
+      "source_url": "https://www.capterra.com/",
+      "source_date": "2026-10-27",
+      "need_tier": "pain",
+      "scores": {
+        "frequency": 4.0,
+        "pain_level": 4.5,
+        "current_workaround": 4.0,
+        "willingness_to_pay": 4.0,
+        "market_size": 4.0
+      }
+    },
+    {
+      "id": "clue-balcony-plant-visualizer",
+      "title": "AI Balcony Plant Feng Shui Visualizer for Renters",
+      "channel": "personal_or_peer_observation",
+      "quote": "I wish I could see how different decorative plants look on my apartment balcony before buying.",
+      "persona_context": "Apartment renter decorating a balcony",
+      "input_data": "Balcony photo",
+      "output_data": "Decorative plant preview image",
+      "source_url": "https://trends.google.com/",
+      "source_date": "2026-10-27",
+      "need_tier": "desire",
+      "scores": {
+        "frequency": 1.5,
+        "pain_level": 1.0,
+        "current_workaround": 1.5,
+        "willingness_to_pay": 1.0,
+        "market_size": 3.5
+      }
+    }
+  ]
+}
