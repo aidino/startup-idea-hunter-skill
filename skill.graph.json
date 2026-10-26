@@ -33,13 +33,13 @@
     {
       "id": "skill_document",
       "path": "SKILL.md",
-      "sha256": "30278cb6fa59d55d2e477efdd31e0b1dfb3d93292d0978086eb8d76a788a52e0",
+      "sha256": "44eb25487a000548bb01815984b3a33bfe38d12ee1f0e8803a177d7b2264585c",
       "type": "instruction"
     },
     {
       "id": "verification_md",
       "path": "VERIFICATION.md",
-      "sha256": "213a153ab84ee39846a8d5748131b3231a8dc73706a12fe2e8b60f79466acfc9",
+      "sha256": "10a3a628dfa548e639e8469500b86d35e2043ebd65436d492f982a0e93ea41b9",
       "type": "package_file"
     },
     {
