@@ -15,13 +15,13 @@ license: MIT
 metadata:
   author: aidino
   version: 1.0.0
-  created: 2026-10-27
-  last_reviewed: 2026-10-27
+  created: "2026-10-27"
+  last_reviewed: "2026-10-27"
   review_interval_days: 90
 provenance:
   maintainer: aidino
   version: 1.0.0
-  created: 2026-10-27
+  created: "2026-10-27"
   source_references:
     - https://raw.githubusercontent.com/datawhalechina/easy-vibe/main/docs/vi-vn/stage-1/appendix-idea-sources/index.md
     - https://raw.githubusercontent.com/datawhalechina/easy-vibe/main/docs/vi-vn/stage-1/finding-great-idea/index.md
