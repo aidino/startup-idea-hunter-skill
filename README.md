@@ -69,77 +69,72 @@ npx skills add https://github.com/aidino/startup-idea-hunter-skill
 python3 scripts/run_pipeline.py --check-prereqs
 ```
 
-## How to Use in Your Coding Agent (Cách sử dụng)
+## How to Use in Your Coding Agent
 
-Sau khi cài đặt, bạn **không cần tự chạy script Python bằng tay**. Hãy gọi trực tiếp skill trong khung chat của Coding Agent (Claude Code, Cursor, Codex, GitHub Copilot, OpenCode, Gemini CLI...) bằng lệnh `/startup-idea-hunter-skill` hoặc ngôn ngữ tự nhiên:
+Once installed, you **do not need to run Python scripts manually**. Invoke the skill directly inside your Coding Agent chat (Claude Code, Cursor, Codex, GitHub Copilot, OpenCode, Gemini CLI, etc.) using `/startup-idea-hunter-skill` or natural language. The Coding Agent will automatically respond in the language you use.
 
-### 1. Truy lùng ý tưởng từ đầu theo một ngách (Chưa có manh mối sẵn)
-Gõ vào Coding Agent:
+### 1. Hunt Startup Ideas from Scratch in Any Niche
+Prompt your Coding Agent:
 
 ```text
-/startup-idea-hunter-skill Hãy giúp tôi truy lùng manh mối và tìm ý tưởng AI startup trong lĩnh vực công việc tự do (freelancing), có ghi nguồn rõ ràng.
-```
-*(Hoặc tiếng Anh)*:
-```text
-/startup-idea-hunter-skill Hunt AI micro-SaaS startup ideas in the property management niche using the 4-step Easy-Vibe workflow.
+/startup-idea-hunter-skill Hunt AI micro-SaaS startup ideas in the freelance workflow niche using the 4-step Easy-Vibe methodology, with verbatim quotes and source links.
 ```
 
-**Agent sẽ tự động thực hiện:**
-1. Sinh bộ câu lệnh tìm kiếm trên **4 kênh** (Reddit/cộng đồng, review 1–3 sao trên Capterra/G2, Indie Hackers/Product Hunt, và chợ việc làm lặp lại trên Upwork/Fiverr).
-2. Dùng công cụ tìm kiếm (Web Search) của Agent để thu thập lời phàn nàn nguyên văn (verbatim quotes), bối cảnh người dùng và link nguồn.
-3. Ánh xạ từng vấn đề sang luồng dữ liệu **Input $\rightarrow$ AI Capability $\rightarrow$ Output**.
-4. Chấm điểm theo **5 tiêu chí Easy-Vibe** (`Frequency`, `Pain Level`, `Current Workaround`, `Willingness to Pay`, `Market Size`), phân tầng nhu cầu (`pain` > `gratification` > `desire`) và xuất ra **Trang Manh Mối + Kế hoạch 5 bước kiểm chứng MVP**.
+**What the Coding Agent does automatically:**
+1. Generates a **4-channel search query pack** across Reddit/forums, Capterra/G2 1-to-3 star reviews, Indie Hackers/Product Hunt launches, and Upwork/Fiverr repetitive jobs.
+2. Uses the agent's built-in web search to harvest verbatim user complaints, persona context, and source URLs.
+3. Maps each clue through an AI Engineer lens: **Unstructured Input $\rightarrow$ AI Capability $\rightarrow$ Structured Output**.
+4. Scores and ranks every candidate on the **5-Criteria Easy-Vibe Scorecard** (`Frequency`, `Pain Level`, `Current Workaround`, `Willingness to Pay`, `Market Size`), classifies the need tier (`pain` > `gratification` > `desire`), and outputs a **Clue Page + 5-Step MVP Validation Plan**.
 
 ---
 
-### 2. Chấm điểm & Sàng lọc các ghi chú / ý tưởng bạn đã gom được
-Khi bạn đã có sẵn một vài phàn nàn của người dùng, link bài viết hoặc file ghi chú:
+### 2. Score & Filter Existing Clues or Notes You Collected
+When you already have user complaints, forum links, or raw notes:
 
 ```text
-/startup-idea-hunter-skill Tôi vừa gom được 4 vấn đề từ Reddit và Upwork trong file clues.json. Hãy chấm điểm theo chuẩn Easy-Vibe xem ý tưởng nào là nỗi đau thật (painkiller) đáng làm MVP nhất và loại bỏ các ý tưởng vitamin.
+/startup-idea-hunter-skill Score the raw complaints in clues.json using the Easy-Vibe 5-criteria scorecard. Tell me which one is a real painkiller worth building an MVP for and which ones are vitamin ideas to skip.
 ```
 
 ---
 
-### 3. Tái cấu trúc (Reframe) một ý tưởng chung chung thành ngách có người trả tiền
-Nếu bạn đang có một ý tưởng còn rộng (ví dụ: *"Làm app quản lý chi tiêu bằng AI"* hoặc *"Làm app tập thể dục"*):
+### 3. Reframe a Broad Idea into a High-Willingness-to-Pay Niche
+When you have a broad product idea (e.g., *"an AI meeting notes app"* or *"a fitness tracker"*):
 
 ```text
-/startup-idea-hunter-skill Tôi muốn làm ứng dụng AI ghi chú cuộc họp. Hãy dùng phương pháp chia ngang nhóm người dùng (horizontal segmentation) và đào sâu bối cảnh (vertical timeline) của Easy-Vibe để tìm ra ngách hẹp có khả năng chi trả cao nhất.
+/startup-idea-hunter-skill I want to build an AI meeting notes tool. Apply Easy-Vibe horizontal user segmentation and vertical context timeline analysis to reframe it into a narrow niche with strong willingness to pay.
 ```
 
 ---
 
-### 4. Dạy lại Skill khi bạn muốn tinh chỉnh kết quả (`--correct`)
-Nếu bạn muốn chỉnh lại cách skill đánh giá trong những lần chạy sau, hãy bảo Agent:
+### 4. Teach & Refine the Skill Over Time (`--correct`)
+When you disagree with a ranking or want the skill to remember a domain rule on future runs, tell your agent:
 
 ```text
-Hãy ghi nhận hiệu chỉnh cho startup-idea-hunter-skill: "Ưu tiên các bài toán B2B xử lý chứng từ PDF/Excel hơn là công cụ B2C"
+Record a correction for startup-idea-hunter-skill: "Prioritize B2B PDF/spreadsheet automation workflows over B2C habit trackers"
 ```
-*(Agent sẽ tự chạy `scripts/evolve.py --correct` để cập nhật bộ nhớ `## Gotchas` và tạo bài test chống hồi quy).*
+*(The agent runs `scripts/evolve.py --correct` under the hood to update `## Gotchas` and add a permanent regression check).*
 
 ---
 
-## Under the Hood (CLI dành cho Agent & CI)
+## Under the Hood (Deterministic CLI for Agents & CI)
 
-Bên dưới lớp giao tiếp tự nhiên, Coding Agent sẽ tự động gọi các script định sẵn trong `scripts/` để đảm bảo tính toán điểm số nhất quán:
+Behind the conversational interface, the Coding Agent invokes these deterministic scripts in `scripts/` so scoring and validation remain reproducible:
 
 ```bash
-# Agent chạy pipeline chấm điểm & xuất báo cáo Markdown + JSON:
+# Run the end-to-end scoring & MVP reframing pipeline:
 python3 scripts/run_pipeline.py \
   --input evals/golden/case-1/input.json \
   --output output/freelance-scorecard.json \
   --markdown output/freelance-scorecard.md
 
-# Agent sinh bộ query săn manh mối 4 kênh:
+# Generate 4-channel hunting queries for a domain:
 python3 scripts/generate_queries.py --niche "property management" --output output/queries.json
 
-# Kiểm tra Evals & Bảo trì định kỳ:
+# Validate evals and run self-maintenance:
 python3 scripts/run_evals.py --validate
 python3 scripts/run_evals.py --rollout
 python3 scripts/evolve.py
 ```
-
 ## Verification
 
 See [VERIFICATION.md](VERIFICATION.md) for recorded gate results and rollout evidence.

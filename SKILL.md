@@ -43,10 +43,12 @@ Invoke `/startup-idea-hunter-skill` when you want to:
 - Score and rank candidate startup ideas using the Easy-Vibe 5-Criteria Scorecard and Need-Tier Classifier.
 - Reframe a broad feature idea into a focused, high-willingness-to-pay AI micro-SaaS MVP concept.
 
+**Language adaptability**:
+- Always respond in the language used by the user (or the language configured in the host Coding Agent), while keeping JSON keys and verdict enums in canonical English.
+
 **Anti-goals**:
 - Do NOT activate on general coding, deployment, or model-training queries — wait for explicit `/startup-idea-hunter-skill` invocation or clear startup/product idea discovery requests.
 - Never fabricate user quotes or URLs when live search is requested; every clue must preserve its verbatim wording and source link.
-
 ## Prerequisites
 
 - **Runtime**: Python 3.9+ (uses standard library only; zero external pip packages required).
@@ -75,7 +77,7 @@ python3 scripts/run_pipeline.py \
 
 ### Workflow 2: Starting Without Clues (Live 4-Channel Hunting via Agent Web Search)
 
-When the user only names a domain or niche (for example, *"Hunt AI startup ideas in property management"* or *"Tìm ý tưởng startup cho công việc tự do"*):
+When the user only names a domain or niche (for example, *"Hunt AI startup ideas in property management"* or *"Find micro-SaaS pain points in freelance workflows"*):
 
 1. Run `python3 scripts/generate_queries.py` to generate the 4-channel search queries for the niche:
    ```bash
@@ -126,8 +128,7 @@ All scripts emit structured JSON errors to `stderr` with `"error"`, `"error_type
 **Activation examples**:
 - `/startup-idea-hunter-skill Hunt startup ideas in the freelance workflow niche`
 - `/startup-idea-hunter-skill --input clues.json --output scorecard.json`
-- "Theo hướng dẫn Easy-Vibe, hãy giúp tôi truy lùng manh mối và chấm điểm ý tưởng AI startup"
-
+- "Use Easy-Vibe to hunt community pain points and score AI micro-SaaS startup ideas"
 **Does NOT activate for**:
 - "Write a Python web scraper to download images from Instagram"
 - "Optimize my PostgreSQL database indexes"

@@ -21,25 +21,25 @@
     {
       "id": "agents_document",
       "path": "AGENTS.md",
-      "sha256": "b843846fcde6342242fd93969ae4e0328e72fc7a564e404b09b017ca5ddba436",
+      "sha256": "a9bbac5274871def84ec55ed8a1eb3ba7837c547147ada4b7292d449e38bc624",
       "type": "companion_instruction"
     },
     {
       "id": "readme_md",
       "path": "README.md",
-      "sha256": "b75941cdaa58dbe48da077a19dc1131c62d2a76f9496ccf623f82503f7474673",
+      "sha256": "8190e9859a82495710c876f6f7b2305d6326d4263a7c951ae6a460bf6fc5dc92",
       "type": "package_file"
     },
     {
       "id": "skill_document",
       "path": "SKILL.md",
-      "sha256": "e1c4bce3ff5ba2cfd3a701eec8a537e82fc885b2a0fc0022274c6fbd75dc23ff",
+      "sha256": "30278cb6fa59d55d2e477efdd31e0b1dfb3d93292d0978086eb8d76a788a52e0",
       "type": "instruction"
     },
     {
       "id": "verification_md",
       "path": "VERIFICATION.md",
-      "sha256": "809525d2b59f1311bc960dda2b2389398d2119d4ab6b608bde37c4dc6ba42edd",
+      "sha256": "213a153ab84ee39846a8d5748131b3231a8dc73706a12fe2e8b60f79466acfc9",
       "type": "package_file"
     },
     {

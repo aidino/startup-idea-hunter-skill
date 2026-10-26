@@ -8,13 +8,12 @@
 
 ## Activation
 
-This skill activates when users ask about finding startup ideas, hunting user pain points, mining low-star software reviews, structuring an Easy-Vibe Clue Page, or scoring AI micro-SaaS concepts. Invoke with `/startup-idea-hunter-skill` on platforms that support slash commands, or ask naturally.
+This skill activates when users ask about finding startup ideas, hunting user pain points, mining low-star software reviews, structuring an Easy-Vibe Clue Page, or scoring AI micro-SaaS concepts. Invoke with `/startup-idea-hunter-skill` on platforms that support slash commands, or ask naturally in any language (the agent replies in the user's language).
 
 **Example queries:**
 - `/startup-idea-hunter-skill --input evals/golden/case-1/input.json --output output/freelance-scorecard.json`
 - `/startup-idea-hunter-skill Hunt startup ideas in the freelance workflow niche for an AI Engineer`
-- "Theo hướng dẫn Easy-Vibe, hãy giúp tôi truy lùng manh mối từ cộng đồng và chấm điểm ý tưởng AI startup"
-
+- "Use the Easy-Vibe methodology to hunt community clues and score AI startup ideas"
 ## Usage
 
 Run the deterministic pipeline on a JSON clue file:
