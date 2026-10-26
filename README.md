@@ -46,7 +46,7 @@ npx skills add https://github.com/aidino/startup-idea-hunter-skill
 
 | Platform | Copy to |
 |---|---|
-| Universal | `~/.agents/skills/startup-idea-hunter-skill/` |
+| Universal / Oh My Pi (`omp`) | `~/.agents/skills/startup-idea-hunter-skill/` |
 | Claude Code | `~/.claude/skills/startup-idea-hunter-skill/` |
 | GitHub Copilot | `.github/skills/startup-idea-hunter-skill/` |
 | Cursor | `.cursor/rules/startup-idea-hunter-skill/` |
@@ -71,12 +71,20 @@ python3 scripts/run_pipeline.py --check-prereqs
 
 ## How to Use in Your Coding Agent
 
-Once installed, you **do not need to run Python scripts manually**. Invoke the skill directly inside your Coding Agent chat (Claude Code, Cursor, Codex, GitHub Copilot, OpenCode, Gemini CLI, etc.) using `/startup-idea-hunter-skill` or natural language. The Coding Agent will automatically respond in the language you use.
+Once installed, you **do not need to run Python scripts manually**. Invoke the skill directly inside your Coding Agent chat (Oh My Pi, Claude Code, Cursor, Codex, GitHub Copilot, OpenCode, Gemini CLI, etc.) or use natural language. The Coding Agent will automatically respond in the language you use.
+
+> **Note for Oh My Pi (`omp`) users**:
+> - Invoke skills with the `/skill:` prefix: **`/skill:startup-idea-hunter-skill <your prompt>`**
+> - If you installed the skill while an `omp` session was already open, run **`/reload-plugins`** (or start a new `omp` session) so the interactive autocomplete refreshes.
 
 ### 1. Hunt Startup Ideas from Scratch in Any Niche
 Prompt your Coding Agent:
 
 ```text
+# In Oh My Pi (omp):
+/skill:startup-idea-hunter-skill Hunt AI micro-SaaS startup ideas in the freelance workflow niche using the 4-step Easy-Vibe methodology, with verbatim quotes and source links.
+
+# In Claude Code / Cursor / Copilot:
 /startup-idea-hunter-skill Hunt AI micro-SaaS startup ideas in the freelance workflow niche using the 4-step Easy-Vibe methodology, with verbatim quotes and source links.
 ```
 

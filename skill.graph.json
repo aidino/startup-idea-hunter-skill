@@ -27,7 +27,7 @@
     {
       "id": "readme_md",
       "path": "README.md",
-      "sha256": "8190e9859a82495710c876f6f7b2305d6326d4263a7c951ae6a460bf6fc5dc92",
+      "sha256": "a85a7e3ebce2800cd1bec28d002c2ae9b0da631c3089e337f71a5cd7f425806b",
       "type": "package_file"
     },
     {
@@ -39,7 +39,7 @@
     {
       "id": "verification_md",
       "path": "VERIFICATION.md",
-      "sha256": "10a3a628dfa548e639e8469500b86d35e2043ebd65436d492f982a0e93ea41b9",
+      "sha256": "5ebf11856c66fdb9191891cba83a32203dd8425ac8946b009a88bcca729c20e3",
       "type": "package_file"
     },
     {
