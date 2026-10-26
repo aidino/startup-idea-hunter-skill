@@ -27,7 +27,7 @@
     {
       "id": "readme_md",
       "path": "README.md",
-      "sha256": "5617d13632e7da51c9eddee0ab634b15699640a6f80dd587d011aae5a59a52a2",
+      "sha256": "b75941cdaa58dbe48da077a19dc1131c62d2a76f9496ccf623f82503f7474673",
       "type": "package_file"
     },
     {
@@ -35,6 +35,12 @@
       "path": "SKILL.md",
       "sha256": "e1c4bce3ff5ba2cfd3a701eec8a537e82fc885b2a0fc0022274c6fbd75dc23ff",
       "type": "instruction"
+    },
+    {
+      "id": "verification_md",
+      "path": "VERIFICATION.md",
+      "sha256": "a879d51f12f46cecc3355f61ca2a81e01776bb5ec69875cf58ce38d48becc51a",
+      "type": "package_file"
     },
     {
       "id": "assets_config_json",
